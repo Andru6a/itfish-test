@@ -32,7 +32,7 @@ const EyeOffIcon = () => (
     </svg>
 );
 
-const test_1 = () => {
+const Test_1 = () => {
     const router = useRouter();
     const setLogin = useStore((s) => s.setLogin);
     const [showPassword, setShowPassword] = useState(false);
@@ -122,4 +122,4 @@ const test_1 = () => {
     );
 };
 
-export default test_1;
+export default Test_1;

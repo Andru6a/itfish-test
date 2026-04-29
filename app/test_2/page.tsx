@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 
-const test_2 = () => {
+const Test_2 = () => {
   const login = useStore((s) => s.login);
 
   return (
@@ -19,4 +19,4 @@ const test_2 = () => {
   );
 };
 
-export default test_2;
+export default Test_2;

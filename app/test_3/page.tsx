@@ -7,7 +7,7 @@ import {useStore} from "@/store/useStore";
 
 type Post = { id: number; title: string; body: string; userId: number };
 
-const test_3 = () => {
+const Test_3 = () => {
     const setPosts = useStore((s) => s.setPosts);
 
     const [inputValue, setInputValue] = useState("");
@@ -31,7 +31,7 @@ const test_3 = () => {
         if (data) {
             setPosts(data.slice(0, 10));
         }
-    }, [data]);
+    }, [data, setPosts]);
 
     // Примечание: подсказка в этом файле говорила "нечётным" — расхождение с test.md, выбрал инфу из test.md.
     const filtered = useMemo(
@@ -75,4 +75,4 @@ const test_3 = () => {
     );
 };
 
-export default test_3;
+export default Test_3;

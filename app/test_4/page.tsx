@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import { useStore } from "@/store/useStore";
 
-const test_4 = () => {
+const Test_4 = () => {
   const posts = useStore((s) => s.posts);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -48,4 +48,4 @@ const test_4 = () => {
   );
 };
 
-export default test_4;
+export default Test_4;
